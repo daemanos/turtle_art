@@ -1,7 +1,7 @@
 """
-art.py
+kochpinski.py
 
-Functions to draw cool shit.
+All hail the majestic Kochpinski.
 
 author: Daman Morris <damanm72@gmail.com>
 """
