@@ -43,4 +43,4 @@ The Kochpinski is a majestic combination of a Koch curve and a Sierpinski
 triangle. For added majesty, make a Koch snowflake and fill in the middle with
 another Sierpinski triangle:
 
-![kochpinski snowflake](ex/kochpinski.png)
+![kochpinski snowflake](ex/kochpinski_flake.png)
