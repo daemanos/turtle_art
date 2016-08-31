@@ -33,9 +33,9 @@ To draw the tree, the symbols are interpreted as follows:
 Here, push and pop refer to an internal stack used to navigate the tree.
 
 The number of iterations controls how many branches are drawn; for example,
-with $n = 5$ the following tree results:
+with *n* = 5 the following tree results:
 
-![pythagoras tree](../blob/master/ex/pythagoras_tree.png)
+![pythagoras tree](ex/pythagoras_tree.png)
 
 ## Kochpinski
 
@@ -43,4 +43,4 @@ The Kochpinski is a majestic combination of a Koch curve and a Sierpinski
 triangle. For added majesty, make a Koch snowflake and fill in the middle with
 another Sierpinski triangle:
 
-![kochpinski snowflake](../blob/master/ex/kochpinski.png)
+![kochpinski snowflake](ex/kochpinski.png)
