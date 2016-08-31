@@ -2,7 +2,7 @@
 koch.py
 
 A Lindenmayer system to draw a Koch curve (using right angles). Adapted from
-https://www.wikiwand.com/en/L-system.
+https://www.wikipedia.com/wiki/L-system.
 
 author: Daman Morris <damanm72@gmail.com>
 """

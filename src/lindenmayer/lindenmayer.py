@@ -2,6 +2,13 @@
 lindenmayer.py
 
 Generic classes for the development of Lindenmayer systems for turtle drawing.
+The basic class is Lindenmayer, which provides methods to apply the rules of
+the system, either once or iteratively. It does not, however, provide
+drawing capabilities; these must be implemented by subclasses. If every
+drawing symbol in the alphabet corresponds to a single function that takes a
+length argument, the class SimpleLindenmayer can be used instead.
+
+See https://wikipedia.org/wiki/L-system for more information.
 
 author: Daman Morris <damanm72@gmail.com>
 """

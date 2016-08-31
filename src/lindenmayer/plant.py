@@ -2,7 +2,7 @@
 plant.py
 
 A Lindenmayer system to draw a plant. Adapted from
-https://www.wikiwand.com/en/L-system.
+https://www.wikipedia.com/wiki/L-system.
 
 author: Daman Morris <damanm72@gmail.com>
 """
