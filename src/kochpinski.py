@@ -118,3 +118,22 @@ def kochpinski_flake(side, thresh):
     """
     sierpinski(side, thresh, turn = turtle.right)
     koch_flake(side, thresh, sierpinski)
+
+
+if __name__ == '__main__':
+    side = int(input('Side length: '))
+    thresh = int(input('Length threshold: '))
+
+    fs = locals()
+    while True:
+        f = input('Drawing function: ')
+        if f in fs:
+            f = fs[f]
+            break
+        else:
+            print('No such function: ' + f)
+
+    turtle.speed(0)
+    turtle.ht()
+    f(side, thresh)
+    turtle.mainloop()
