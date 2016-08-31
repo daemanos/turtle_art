@@ -37,6 +37,60 @@ with *n* = 5 the following tree results:
 
 ![pythagoras tree](ex/pythagoras_tree.png)
 
+### Koch curve
+
+A variant of the [Koch curve](https://wikipedia.org/wiki/Koch_curve) can be
+constructed with the following L-system:
+
+- **alphabet:** F, +, -
+- **axiom:** F
+- **rules:** F → F+F-F-F+F
+
+The symbols are interpreted as follows:
+
+- F: draw forward
+- +: turn left 90°
+- \-: turn right 90°
+
+For *n* = 4, the following image results:
+
+![koch curve](ex/lindenkoch.png)
+
+### Sierpinski triangle
+
+The [Sierpinski triangle](https://wikipedia.org/wiki/Sierpinski_triangle) can
+also be approximated by an L-system.
+
+- **alphabet:** A, B, +, -
+- **axiom:** A
+- **rules:** A → +B-A-B+, B → -A+B+A-
+
+Here the symbols are interpreted like the Koch curve above, but A and B are
+used to mean 'draw forward'.
+
+### Fractal plant
+
+L-systems can be used to draw realistic-looking plants. One such system is as
+follows:
+
+- **alphabet**: X, F, +, - , \[, \]
+- **axiom:** X
+- **rules:** X → F-\[\[X\]+X\]+F\[+FX\]-X, F → FF
+
+Here as in the Pythagoras tree, \[ and \] are used to push and pop the current
+position and angle onto an internal stack. The other symbols are:
+
+- F: draw forward
+- X: nothing (used to control the evolution of the curve)
+- +: turn right 25°
+- \-: turn left 25°
+
+For *n* = 6, the following plant results:
+
+![plant](ex/plant.png)
+
+![sierpinski triangle](ex/lindenpinski.png)
+
 ## Kochpinski
 
 The Kochpinski is a majestic combination of a Koch curve and a Sierpinski
