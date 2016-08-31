@@ -7,7 +7,7 @@ https://www.wikipedia.com/wiki/L-system.
 author: Daman Morris <damanm72@gmail.com>
 """
 
-from lindenmayer import SimpleLindenmayer
+from lindenmayer import SimpleLindenmayer, prompt
 import turtle
 
 class Koch(SimpleLindenmayer):
@@ -21,7 +21,4 @@ class Koch(SimpleLindenmayer):
         super().__init__('F', {'F': 'F+F-F-F+F'}, cmds)
 
 if __name__ == '__main__':
-    koch = Koch()
-    koch.iterate(int(input('Number of iterations: ')))
-    koch.draw(int(input('Segment length: ')))
-    turtle.mainloop()
+    prompt(Koch)

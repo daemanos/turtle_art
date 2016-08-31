@@ -13,6 +13,25 @@ See https://wikipedia.org/wiki/L-system for more information.
 author: Daman Morris <damanm72@gmail.com>
 """
 
+import turtle
+
+def prompt(cls):
+    """
+    A standard prompt to draw a particular L-system.
+
+    Automatically sets the turtle to the fastest speed, and hides the turtle
+    arrow. Prompts for the number of iterations and the side length, and
+    keeps the turtle window open after drawing is finished.
+    """
+    turtle.speed(0)
+    turtle.ht()
+
+    lindie = cls()
+    lindie.iterate(int(input('Number of iterations: ')))
+    lindie.draw(int(input('Side length: ')))
+
+    turtle.mainloop()
+
 class Lindenmayer:
     """
     A Lindenmayer system (intended for drawing turtle graphics).

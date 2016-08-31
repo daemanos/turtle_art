@@ -7,7 +7,7 @@ https://www.wikipedia.com/wiki/L-system.
 author: Daman Morris <damanm72@gmail.com>
 """
 
-from lindenmayer import SimpleLindenmayer
+from lindenmayer import SimpleLindenmayer, prompt
 import turtle
 
 class Sierpinski(SimpleLindenmayer):
@@ -24,8 +24,4 @@ class Sierpinski(SimpleLindenmayer):
 
 
 if __name__ == '__main__':
-    tri = Sierpinski()
-    tri.iterate(int(input('Number of iterations: ')))
-    turtle.speed(0)
-    tri.draw(int(input('Segment length: ')))
-    turtle.mainloop()
+    prompt(Sierpinski)

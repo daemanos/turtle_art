@@ -7,7 +7,7 @@ https://www.wikipedia.com/wiki/L-system.
 author: Daman Morris <damanm72@gmail.com>
 """
 
-from lindenmayer import Lindenmayer
+from lindenmayer import Lindenmayer, prompt
 import turtle
 
 class PythagTree(Lindenmayer):
@@ -36,7 +36,4 @@ class PythagTree(Lindenmayer):
                 turtle.right(45)
 
 if __name__ == '__main__':
-    tree = PythagTree()
-    tree.iterate(int(input('Number of iterations: ')))
-    tree.draw(int(input('Segment length: ')))
-    turtle.mainloop()
+    prompt(PythagTree)

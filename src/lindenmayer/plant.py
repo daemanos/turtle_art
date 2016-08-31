@@ -7,7 +7,7 @@ https://www.wikipedia.com/wiki/L-system.
 author: Daman Morris <damanm72@gmail.com>
 """
 
-from lindenmayer import Lindenmayer
+from lindenmayer import Lindenmayer, prompt
 import turtle
 
 class Plant(Lindenmayer):
@@ -41,12 +41,5 @@ class Plant(Lindenmayer):
 
 
 if __name__ == '__main__':
-    plant = Plant()
-
-    turtle.speed(0)
     turtle.setheading(60)
-
-    plant.iterate(int(input('Number of iterations: ')))
-    plant.draw(int(input('Segment length: ')))
-
-    turtle.mainloop()
+    prompt(Plant)
