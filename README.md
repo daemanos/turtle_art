@@ -66,7 +66,9 @@ also be approximated by an L-system.
 - **rules:** A → +B-A-B+, B → -A+B+A-
 
 Here the symbols are interpreted like the Koch curve above, but A and B are
-used to mean 'draw forward'.
+used to mean 'draw forward'. For *n* = 8, the following triangle results:
+
+![sierpinski triangle](ex/lindenpinski.png)
 
 ### Fractal plant
 
@@ -88,8 +90,6 @@ position and angle onto an internal stack. The other symbols are:
 For *n* = 6, the following plant results:
 
 ![plant](ex/plant.png)
-
-![sierpinski triangle](ex/lindenpinski.png)
 
 ## Kochpinski
 
