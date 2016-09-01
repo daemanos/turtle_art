@@ -20,9 +20,9 @@ The [pythagoras tree](https://wikipedia.org/wiki/Pythagoras_tree_(fractal)) is
 an example of an L-system that requires additional state. It is constructed
 as follows:
 
-- **alphabet**: 0, 1, \[, \]
-- **axiom**: 0
-- **rules**: 1 → 11, 0 → 1\[0\]0
+- **alphabet:** 0, 1, \[, \]
+- **axiom:** 0
+- **rules:** 1 → 11, 0 → 1\[0\]0
 
 To draw the tree, the symbols are interpreted as follows:
 
@@ -55,6 +55,19 @@ The symbols are interpreted as follows:
 For *n* = 4, the following image results:
 
 ![koch curve](ex/lindenkoch.png)
+
+### Dragon curve
+
+The [dragon curve](https://wikipedia.org/wiki/Dragon_curve) can also be drawn
+with an L-system, as follows:
+
+- **alphabet:** X, Y, F, +, -
+- **axiom:** FX
+- **rules:** X → X+YF+, Y → -FX-Y
+
+As with the Koch curve, F draws forward and - and + turn left and right.
+
+![dragon](ex/dragon.png)
 
 ### Sierpinski triangle
 
