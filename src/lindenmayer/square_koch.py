@@ -10,7 +10,7 @@ author: Daman Morris <damanm72@gmail.com>
 from lindenmayer import SimpleLindenmayer, prompt
 import turtle
 
-class Koch(SimpleLindenmayer):
+class SquareKoch(SimpleLindenmayer):
 
     def __init__(self):
         cmds = {
@@ -21,4 +21,4 @@ class Koch(SimpleLindenmayer):
         super().__init__('F', {'F': 'F+F-F-F+F'}, cmds)
 
 if __name__ == '__main__':
-    prompt(Koch)
+    prompt(SquareKoch)

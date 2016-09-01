@@ -37,10 +37,10 @@ with *n* = 5 the following tree results:
 
 ![pythagoras tree](ex/pythagoras_tree.png)
 
-### Koch curve
+### Square Koch curve
 
-A variant of the [Koch curve](https://wikipedia.org/wiki/Koch_curve) can be
-constructed with the following L-system:
+A square variant of the [Koch curve](https://wikipedia.org/wiki/Koch_curve) can
+be constructed with the following L-system:
 
 - **alphabet:** F, +, -
 - **axiom:** F
@@ -54,7 +54,7 @@ The symbols are interpreted as follows:
 
 For *n* = 4, the following image results:
 
-![koch curve](ex/lindenkoch.png)
+![square koch curve](ex/lindenkoch.png)
 
 ### Dragon curve
 
