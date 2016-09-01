@@ -56,6 +56,19 @@ For *n* = 4, the following image results:
 
 ![square koch curve](ex/lindenkoch.png)
 
+### Koch snowflake
+
+A regular Koch snowflake can be constructed with the following L-system:
+
+- **alphabet:** F, +, -
+- **axiom:** F+F+F
+- **rules:** F → F-F+F-F
+
+As with the square Koch curve, F draws forward; + turns left by 60°, and -
+turns right by 120°. For *n* = 5, the following snowflake results:
+
+![kochflake](ex/kochflake.png)
+
 ### Dragon curve
 
 The [dragon curve](https://wikipedia.org/wiki/Dragon_curve) can also be drawn
